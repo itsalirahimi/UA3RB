@@ -1,35 +1,50 @@
-### Checked
+### Checked and Useable
 
-| Name | 3D model | Terrain Data (DTM) | Segmentation | Pose | RGB image | Real / synthetic | Link | Useable |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| OrthoLoC | Yes (DSM) | No | - | Yes (6-DoF) | Yes | Real | ([cvg.cit.tum.de][3]) | Yes |
-| UseGeo | Yes (LiDAR / point cloud + depth) | No | - | Yes (OPK + UTM) | Yes | Real | ([UseGeo data][4]) | Yes |
-| UAVScenes | Yes (LiDAR) | No | Yes (semantic) | Yes (6-DoF) | Yes | Real | ([GitHub][5]) | Yes |
-| GrAco | Yes (LiDAR) | No | - | Yes | Yes | Real | ([GitHub][7]) | Yes |
-| SynDrone (Syndrone) | Yes (Depth + LiDAR) | No | Yes (semantic) | Yes (camera extrinsics) | Yes | Synthetic | ([GitHub][8]) | Yes |
-| FlyAwareV2 | Yes (Depth; multimodal) | No | Yes (semantic) | - | Yes | Mixed | ([GitHub][9]) | Yes |
-| ALTO | - | No | - | Yes (geo/INS-style pose) | Yes | Real | ([Project][10]) | Yes (competition split) |
-| EuRoC MAV | - | No | - | Yes (trajectory) | No (grayscale) | Real | ([ASL ETH][12]) | Yes |
-| DOTA | - | No | No (bbox only) | - | Yes | Real | ([DOTA][13]) | Yes |
-| FloodNet | - | No | Yes (semantic) | - | Yes | Real | ([DatasetNinja][21]) | Yes |
-| AUAIR | - | No | No (bbox only) | - | Yes | Real | ([AUAIR][14]) | Yes |
-| MUN-FRL | Yes (LiDAR) | No | - | Yes | Yes | Real | ([Docs][31]) | Yes |
+| Name | 3D model | Terrain Data (DTM) | Segmentation | Pose | RGB image | Real / synthetic | Link |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| OrthoLoC | Yes (DSM) | No | - | Yes (6-DoF) | Yes | Real | ([cvg.cit.tum.de][3]) |
+| UseGeo | Yes (LiDAR / point cloud + depth) | No | - | Yes (OPK + UTM) | Yes | Real | ([UseGeo data][4]) |
+| UAVScenes | Yes (LiDAR) | No | Yes (semantic) | Yes (6-DoF) | Yes | Real | ([GitHub][5]) |
+| FlyAwareV2 | Yes (Depth; multimodal) | No | Yes (semantic) | - | Yes | Mixed | ([GitHub][9]) |
+| UAVid | - | No | Yes (semantic) | - | Yes | Real | ([DatasetNinja][20]) |
+| FloodNet | - | No | Yes (semantic) | - | Yes | Real | ([DatasetNinja][21]) |
+| AeroScapes | - | No | Yes (semantic) | - | Yes | Real | ([DatasetNinja][19]) |
+| SynDrone (Syndrone) | Yes (Depth + LiDAR) | No | Yes (semantic) | Yes (camera extrinsics) | Yes | Synthetic | ([GitHub][8]) |
+| GrAco | Yes (LiDAR) | No | - | Yes | Yes | Real | ([GitHub][7]) |
+| Semantic Drone Dataset | - | No | Yes (semantic) | - | Yes | Real | ([Kaggle][18]) |
 
-
-
-### Check Later
+### checked and is not useable
 
 | Name | 3D model | Terrain Data (DTM) | Segmentation | Pose | RGB image | Real / synthetic | Link | Downloadable |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Mid-Air | Yes (depth) | No | Yes | Yes | Yes | Synthetic | ([midair.ulg.ac.be][6]) | Yes | Low quality of 3D model (per your note) |
+| WildUAV | Yes (3D recon / depth-related) | No | - | Yes | Yes | Real | ([GitHub][1]) | No | Access via request form (not “open download”) |
+| DenseUAV | - | No | - | - | Yes | Real | ([GitHub][37]) | No | Upon request |
+| LASED | - | No | - | - | Yes | Real | ([GitHub][38]) | No | Not released |
+| VDUAV | - | No | - | - | Yes | Real | ([Paper][39]) | No | Upon request / unclear public download |
+| CS-UAV | - | No | - | - | Yes | Real | ([arXiv][40]) | No | Not available |
+| UL14 | - | No | - | - | Yes | Real | ([SemanticScholar][41]) | No | No public download found |
+| UVL-R2P | - | No | - | - | Yes | Real | ([IEEE][42]) | No | No public download found |
+| Multi-UAV dataset | - | No | - | - | Yes | Real | ([MDPI][43]) | No | Upon request |
+| ComplexUAV | - | No | - | - | Yes | Real | ([GitHub][49]) | No | Requires contacting authors |
+| GauU-Scene V2 | Yes (LiDAR) | No | - | - | Yes | Real | ([Google Form][48]) | No | Requires request/approval (not open download) |
+| OpenFly | Yes (toolchain + dataset) | No | - | Yes | Yes | Mixed | ([Project][47]) | No | “Will be open-sourced” (not released) |
+| VLA-3D | Yes (3D scans / point clouds) | No | Yes | - | - | Mixed | ([GitHub][53]) | Yes | Not an aerial/UAV dataset (indoor 3D scenes) |
+| ALTO | - | No | - | Yes (geo/INS-style pose) | Yes | Real | ([Project][10]) |
+| EuRoC MAV | - | No | - | Yes (trajectory) | No (grayscale) | Real | ([ASL ETH][12]) |
+| DOTA | - | No | No (bbox only) | - | Yes | Real | ([DOTA][13]) |
+| AUAIR | - | No | No (bbox only) | - | Yes | Real | ([AUAIR][14]) |
+| MUN-FRL | Yes (LiDAR) | No | - | Yes | Yes | Real | ([Docs][31]) |
+| iSAID | - | No | Yes (instance) | - | Yes | Real | ([iSAID][52]) | Yes |
+| ISPRS Potsdam (2D Sem. Labeling) | Yes (DSM) | No | Yes (semantic) | - | Yes (orthophoto) | Real | ([ISPRS][50]) | Yes |
+| ISPRS Vaihingen (2D Sem. Labeling) | Yes (DSM) | No | Yes (semantic) | - | Yes (orthophoto) | Real | ([ISPRS][51]) | Yes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | CrossLoc | Yes (simulated LiDAR / depth) | No | - | Yes | Yes | Synthetic | ([GitHub][22]) | Yes |
 | UAV-VisLoc (VisLoc) | - | No | - | Yes (geo pose) | Yes | Real | ([GitHub][11]) | Yes |
-| UAVDT | - | No | No (bbox only) | - | Yes | Real | ([Zenodo][15]) | Yes |
 | VisDrone | - | No | No (bbox only) | - | Yes | Real | ([GitHub][16]) | Yes |
+| UAVDT | - | No | No (bbox only) | - | Yes | Real | ([Zenodo][15]) | Yes |
 | DroneVehicle | - | No | No (bbox only) | - | Yes (+IR) | Real | ([GitHub][29]) | Yes |
 | CARPK | - | No | - | - | Yes | Real | ([CARPK][17]) | Yes |
-| Semantic Drone Dataset | - | No | Yes (semantic) | - | Yes | Real | ([Kaggle][18]) | Yes |
-| AeroScapes | - | No | Yes (semantic) | - | Yes | Real | ([DatasetNinja][19]) | Yes |
-| UAVid | - | No | Yes (semantic) | - | Yes | Real | ([DatasetNinja][20]) | Yes |
 | STPLS3D | Yes (LiDAR / mixed) | No | Yes (3D semantic) | - | Yes | Mixed | ([GitHub][23]) | Yes |
 | Hessigheim 3D | Yes (LiDAR) | No | Yes (semantic) | - | Yes | Real | ([IFP Stuttgart][28]) | Yes |
 | UrbanScene3D | Yes (textured meshes / 3D scenes) | No | Yes (instance available) | Yes | Yes | Mixed | ([GitHub][30]) | Yes |
@@ -44,31 +59,8 @@
 | University-1652 | - | No | - | Yes (geo pairing) | Yes | Real | ([GitHub][36]) | Yes |
 | RealUAV | - | No | - | - | Yes | Real | ([GitHub][44]) | Yes |
 | UAV-VLA (UAV-VLPA-nano-30) | - | No | - | Yes (lat/long metadata) | Yes | Real | ([GitHub][47]) | Yes |
-| iSAID | - | No | Yes (instance) | - | Yes | Real | ([iSAID][52]) | Yes |
-| ISPRS Potsdam (2D Sem. Labeling) | Yes (DSM) | No | Yes (semantic) | - | Yes (orthophoto) | Real | ([ISPRS][50]) | Yes |
-| ISPRS Vaihingen (2D Sem. Labeling) | Yes (DSM) | No | Yes (semantic) | - | Yes (orthophoto) | Real | ([ISPRS][51]) | Yes |
 | DALES | Yes (airborne LiDAR) | No | Yes (3D semantic) | - | - | Real | ([DALES][2]) | Yes |
 | TravelUAV (OpenUAV / VLN platform) | Yes (sim environments) | No | - | Yes | Yes | Synthetic | ([GitHub][46]) | Yes |
-
----
-
-### Not Accepted (not openly downloadable, out-of-scope, or quality issues)
-
-| Name | 3D model | Terrain Data (DTM) | Segmentation | Pose | RGB image | Real / synthetic | Link | Downloadable | Why Rejected? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mid-Air | Yes (depth) | No | Yes | Yes | Yes | Synthetic | ([midair.ulg.ac.be][6]) | Yes | Low quality of 3D model (per your note) |
-| WildUAV | Yes (3D recon / depth-related) | No | - | Yes | Yes | Real | ([GitHub][1]) | No | Access via request form (not “open download”) |
-| DenseUAV | - | No | - | - | Yes | Real | ([GitHub][37]) | No | Upon request |
-| LASED | - | No | - | - | Yes | Real | ([GitHub][38]) | No | Not released |
-| VDUAV | - | No | - | - | Yes | Real | ([Paper][39]) | No | Upon request / unclear public download |
-| CS-UAV | - | No | - | - | Yes | Real | ([arXiv][40]) | No | Not available |
-| UL14 | - | No | - | - | Yes | Real | ([SemanticScholar][41]) | No | No public download found |
-| UVL-R2P | - | No | - | - | Yes | Real | ([IEEE][42]) | No | No public download found |
-| Multi-UAV dataset | - | No | - | - | Yes | Real | ([MDPI][43]) | No | Upon request |
-| ComplexUAV | - | No | - | - | Yes | Real | ([GitHub][49]) | No | Requires contacting authors |
-| GauU-Scene V2 | Yes (LiDAR) | No | - | - | Yes | Real | ([Google Form][48]) | No | Requires request/approval (not open download) |
-| OpenFly | Yes (toolchain + dataset) | No | - | Yes | Yes | Mixed | ([Project][47]) | No | “Will be open-sourced” (not released) |
-| VLA-3D | Yes (3D scans / point clouds) | No | Yes | - | - | Mixed | ([GitHub][53]) | Yes | Not an aerial/UAV dataset (indoor 3D scenes) |
 
 
 ---
